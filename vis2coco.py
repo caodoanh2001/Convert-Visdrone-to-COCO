@@ -3,7 +3,7 @@ import imagesize
 import os
 import json
 from PIL import Image
-from tqdm import tqdm_notebook as tqdm
+from tqdm import tqdm
 import argparse
 
 def convert(dir_data):
