@@ -11,7 +11,7 @@ def convert(dir_data):
   train_data = dir_data + '/VisDrone2019-DET-train/'
   val_data = dir_data + '/VisDrone2019-DET-val/'
   test_data = dir_data + '/VisDrone2019-DET-test-dev/'
-
+  loops = [train_data, val_data, test_data]
   for l in loops:
       print('Solving ', l)
       dict_coco = {}
@@ -138,4 +138,4 @@ def get_args():
 
 if __name__ == '__main__':
     args = get_args()
-    train(args.data_dir)
+    convert(args.data_dir)
