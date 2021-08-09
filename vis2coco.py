@@ -125,7 +125,7 @@ def convert(dir_data):
           "supercategory": "none"}
           ]
 
-      with open('annotations_VisDrone_' + os.path.split(l)[0][2:] + '.json', 'w') as f:
+      with open('annotations_VisDrone_' + l.split('-')[-1][:-1] + '.json', 'w') as f:
           json.dump(dict_coco, f)
 
 def get_args():
